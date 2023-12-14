@@ -1402,6 +1402,26 @@ entries:
     version: 1.0.4-rc
   - apiVersion: v2
     appVersion: 1.0.0
+    created: "2023-12-14T10:00:24.912854507Z"
+    dependencies:
+    - name: nats
+      repository: https://nats-io.github.io/k8s/helm/charts/
+      version: 0.19.13
+    - name: nack
+      repository: https://nats-io.github.io/k8s/helm/charts/
+      version: 0.21.0
+    - name: surveyor
+      repository: file://charts/surveyor
+      version: 0.16.2
+    description: A Helm chart for Kubernetes
+    digest: 8654a5c5a3365d5c218f3cad4f263c4c2898d1c7cb373d9e52ba7d215b93c6e9
+    name: nats
+    type: application
+    urls:
+    - https://github.com/pin-up-global/k8app/releases/download/nats-1.0.4-rc/nats-1.0.4-rc.tgz
+    version: 1.0.4-rc
+  - apiVersion: v2
+    appVersion: 1.0.0
     created: "2023-05-10T06:55:49.909882508Z"
     dependencies:
     - name: nats
@@ -1443,6 +1463,16 @@ entries:
   tel:
   - apiVersion: v2
     appVersion: 1.16.1
+    created: "2023-12-14T10:00:25.231368186Z"
+    description: A Helm chart for Kubernetes
+    digest: 2b65f43be9ceeab196589170895d98f0e2fdb99779897b1a9ecd42ac58de6e66
+    name: tel
+    type: application
+    urls:
+    - https://github.com/pin-up-global/k8app/releases/download/tel-0.1.4/tel-0.1.4.tgz
+    version: 0.1.4
+  - apiVersion: v2
+    appVersion: 1.16.1
     created: "2022-07-27T08:48:09.459788538Z"
     description: A Helm chart for Kubernetes
     digest: 64f0412dcbc7aa664bf8b0c350705ba1f1a500c39983b5da6799c7f4c6cd9ee0
@@ -1451,4 +1481,4 @@ entries:
     urls:
     - https://github.com/d7561985/k8app/releases/download/tel-0.1.3/tel-0.1.3.tgz
     version: 0.1.3
-generated: "2023-12-14T09:58:26.826528582Z"
+generated: "2023-12-14T10:00:25.231697508Z"
