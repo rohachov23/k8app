@@ -4,6 +4,8 @@ on:
   push:
     branches:
       - main
+      - feat/gh-push
+      
 jobs:
   release:
     runs-on: ubuntu-latest
