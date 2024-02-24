@@ -74,7 +74,10 @@ strategy:
     maxSurge:
     maxUnavailable:
   type: RollingUpdate
-
+  
+consulinject:
+  enabled: false
+  
 prometheus:
   enabled: false
   port: "8011"
