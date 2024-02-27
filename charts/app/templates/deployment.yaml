@@ -39,7 +39,7 @@ spec:
         prometheus.io/path: {{ .Values.prometheus.path | quote | default "/metrics" }}
     {{- end }}
     {{- if .Values.consulinject.enabled }}
-        'consul.hashicorp.com/connect-inject': 'true'    
+        consul.hashicorp.com/connect-inject: "true"
     {{- end }}
         checksum/secrets: {{ printf "%v" .Values.secrets | sha256sum }}
         checksum/conf: {{ printf "%v" .Values.configmap | sha256sum }}
